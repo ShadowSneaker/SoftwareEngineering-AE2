@@ -79,13 +79,13 @@ MonoBehaviour:
   motionBlur:
     m_Enabled: 1
     m_Settings:
-      shutterAngle: 145
+      shutterAngle: 42
       sampleCount: 24
-      frameBlending: 0.2
+      frameBlending: 0.01
   eyeAdaptation:
     m_Enabled: 1
     m_Settings:
-      lowPercent: 65.45715
+      lowPercent: 78.797485
       highPercent: 99
       minLuminance: -5
       maxLuminance: 1
@@ -120,12 +120,12 @@ MonoBehaviour:
         neutralWhiteLevel: 10
         neutralWhiteClip: 5
       basic:
-        postExposure: 3.6
+        postExposure: 3
         temperature: 10.9
         tint: 0
         hueShift: 0
         saturation: 0.6
-        contrast: 1.246
+        contrast: 1.04
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}

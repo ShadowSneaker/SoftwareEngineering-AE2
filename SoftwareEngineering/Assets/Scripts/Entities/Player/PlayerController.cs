@@ -40,13 +40,13 @@ public class PlayerController : MonoBehaviour
 
 
         // byrons code
-        if(Input.GetButton("Pause Menu"))
+        if(Input.GetButtonDown("Pause Menu"))
         {
             PauseMenu.gameObject.SetActive(!PauseMenu.IsActive());
         }
 
 
-        if(Input.GetButton("Inventory"))
+        if(Input.GetButtonDown("Inventory"))
         {
             Inventory.gameObject.SetActive(!Inventory.IsActive());
         }
