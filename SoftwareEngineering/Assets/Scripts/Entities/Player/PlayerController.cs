@@ -43,12 +43,14 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Pause Menu"))
         {
             PauseMenu.gameObject.SetActive(!PauseMenu.IsActive());
+            Cursor.visible = !Cursor.visible;
         }
 
 
         if(Input.GetButtonDown("Inventory"))
         {
             Inventory.gameObject.SetActive(!Inventory.IsActive());
+            Cursor.visible = !Cursor.visible;
         }
     }
 

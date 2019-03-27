@@ -9,12 +9,20 @@ public class Settings : MonoBehaviour
     public float Brightness;
     public Scrollbar SliderLocation;
 
+    public Image PuaseMenu;
+    public Image TheInventory;
+
 
     public void QuitGame()
     {
         Application.Quit();
     }
 
+    public void OpenInventory()
+    {
+        TheInventory.gameObject.SetActive(true);
+        PuaseMenu.gameObject.SetActive(false);
+    }
 
     private void Update()
     {
@@ -25,10 +33,6 @@ public class Settings : MonoBehaviour
         {
             child.GetComponent<Light>().intensity = Brightness;
         }
-
-        
-
-        
 
     }
 
