@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButton("Jump"))
         {
-            //Player.Jump();
+            Player.Jump();
         }
 
         Player.MoveDirection(MoveDir);

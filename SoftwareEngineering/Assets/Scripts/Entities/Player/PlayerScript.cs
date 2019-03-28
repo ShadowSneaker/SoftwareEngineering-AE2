@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerScript : EntityScript
 {
-
+    public Transform RespawnPoint;
     public float InteractionRange = 2.0f;
 
 
@@ -112,5 +112,14 @@ public class PlayerScript : EntityScript
     {
         transform.position = NewTransform.position;
         transform.rotation = NewTransform.rotation;
+    }
+
+
+    public void Respawn()
+    {
+        SetPosition(RespawnPoint);
+        ResetStats();
+        UI.Close();
+        Cam.enabled = true;
     }
 }

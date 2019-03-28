@@ -303,14 +303,14 @@ public class EntityScript : MonoBehaviour
 
 
     // makes the entity jump.
-    //public void Jump()
-    //{
-    //    if (!IsDead && Controller && Controller.isGrounded)
-    //    {
-    //        //JumpVal = JumpStrength * Time.deltaTime;
-    //        ApplyDamage(MaxHealth / 2);
-    //    }
-    //}
+    public void Jump()
+    {
+        if (!IsDead && Controller && Controller.isGrounded)
+        {
+            //JumpVal = JumpStrength * Time.deltaTime;
+            ApplyDamage(MaxHealth / 2);
+        }
+    }
 
 
 
@@ -343,5 +343,13 @@ public class EntityScript : MonoBehaviour
         {
             return Anim;
         }
+    }
+
+
+    protected void ResetStats()
+    {
+        Health = MaxHealth;
+        Sanity = MaxSanity;
+        IsDead = false;
     }
 }
