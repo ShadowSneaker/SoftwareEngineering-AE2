@@ -8,10 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public Animator CameraAnim;
     public int waitTime;
-
     public string BeginingScene;
-
-    public Image Settings;
     public Text StartButton;
     public Button MainButton; // the button that switches between start button and resume button
 
@@ -32,14 +29,6 @@ public class MainMenu : MonoBehaviour
             StartButton.text = "Resume Game";
 
         }
-    }
-
-
-    // one to bring up the settings
-    public void OpenSettings()
-    {
-        // makes the settings panel appear
-        Settings.gameObject.SetActive(true);
     }
 
     //one to begin the game
@@ -65,14 +54,6 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
-    }
-
-   
-
-    public void CloseSettingsPanel()
-    {
-        // makes the settings pannel disapear
-        Settings.gameObject.SetActive(false);
     }
 
     IEnumerator LoadScene(string SceneName)
