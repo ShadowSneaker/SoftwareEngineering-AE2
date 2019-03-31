@@ -123,9 +123,8 @@ public class EntityScript : MonoBehaviour
             Info.AttackIgnored = false;
 
             Health -= Info.DamageDealt;
-            Health = Mathf.Clamp(Health, 0.0f, MaxHealth);
+            //Health = Mathf.Clamp(Health, 0.0f, MaxHealth);
             Info.RemainingHealth = Health;
-            Debug.Log(Amount);
 
             if (Health <= 0.0f)
             {

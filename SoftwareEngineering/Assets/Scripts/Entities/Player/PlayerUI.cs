@@ -9,11 +9,22 @@ public class PlayerUI : MonoBehaviour
     public Image GameOverImage;
     Animation GameOverAnim;
 
+    private AnimationClip OnDeath;
+    public AnimationClip OnRespawn;
+
 
 	// Use this for initialization
 	void Start ()
     {
-		
+        if (GameOverImage)
+        {
+            GameOverAnim = GameOverImage.GetComponent<Animation>();
+            OnDeath = GameOverAnim.clip;
+        }
+        else
+        {
+            Debug.LogError("GameOverImage not set.");
+        }
 	}
 	
 	// Update is called once per frame
@@ -27,12 +38,11 @@ public class PlayerUI : MonoBehaviour
     {
         if (GameOverImage)
         {
-            if (!GameOverAnim)
-                GameOverAnim = GameOverImage.GetComponent<Animation>();
-
             GameOverImage.gameObject.SetActive(true);
 
-            GameOverAnim.Play(GameOverAnim.clip.name);
+            GameOverAnim.clip = OnDeath;
+            GameOverAnim.Play(OnDeath.name);
+
             StartCoroutine(AnimDelay(true));
         }
     }
@@ -58,8 +68,11 @@ public class PlayerUI : MonoBehaviour
 
     public void Close()
     {
-        if (GameOverImage && !GameOverAnim)
-            GameOverAnim.Rewind(GameOverAnim.clip.name);
+        GameOverAnim.clip = OnRespawn;
+        GameOverAnim.Play(OnRespawn.name);
+        
+
+        Cursor.visible = false;
         StartCoroutine(AnimDelay(false));
     }
 
@@ -71,5 +84,6 @@ public class PlayerUI : MonoBehaviour
             GameOverImage.gameObject.SetActive(false);
 
         Cursor.visible = OnGameOver;
+        GameOverAnim.clip = OnDeath;
     }
 }

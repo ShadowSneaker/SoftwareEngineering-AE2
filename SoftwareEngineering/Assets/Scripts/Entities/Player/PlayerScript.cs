@@ -89,6 +89,7 @@ public class PlayerScript : EntityScript
 
     protected override void OnDeath(bool IsInsanity)
     {
+        Debug.Log("Ran");
         if (UI)
         {
             UI.DisplayGameOver();
@@ -117,9 +118,9 @@ public class PlayerScript : EntityScript
 
     public void Respawn()
     {
+        UI.Close();
         SetPosition(RespawnPoint);
         ResetStats();
-        UI.Close();
         Cam.enabled = true;
     }
 }
