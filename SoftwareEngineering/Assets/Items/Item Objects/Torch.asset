@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d38968f138315024da5e470b29e84575, type: 3}
-  m_Name: Machete
+  m_Name: Torch
   m_EditorClassIdentifier: 
-  ConsumeOnUse: 1
-  Image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  ItemName: Machette
+  ConsumeOnUse: 0
+  Image: {fileID: 21300000, guid: 8b0d5a960aae0964ba9af8643c8e1d8a, type: 3}
+  ItemName: Torch
   SellValue: 0
   DisplayInfo: 0
-  Description: Sharp
+  Description: Light

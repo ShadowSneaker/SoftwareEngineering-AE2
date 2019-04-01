@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d38968f138315024da5e470b29e84575, type: 3}
-  m_Name: Gear
+  m_Name: Hand Axe
   m_EditorClassIdentifier: 
-  ConsumeOnUse: 1
-  Image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  ItemName: Gear
+  ConsumeOnUse: 0
+  Image: {fileID: 21300000, guid: e156930af19074d4587ed9c7dbc7d1c2, type: 3}
+  ItemName: Hand Axe
   SellValue: 0
   DisplayInfo: 0
-  Description: Better then a Machette
+  Description: Wheres the closest Mirror

@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d38968f138315024da5e470b29e84575, type: 3}
-  m_Name: TestItem
+  m_Name: Medalion
   m_EditorClassIdentifier: 
-  ConsumeOnUse: 1
-  Image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  ItemName: Test
+  ConsumeOnUse: 0
+  Image: {fileID: 21300000, guid: ba6044635a50ef74c9fefc95c4e6185a, type: 3}
+  ItemName: Medalion
   SellValue: 0
-  DisplayInfo: 1
-  Description: Testing
+  DisplayInfo: 0
+  Description: dosent smell of zombies

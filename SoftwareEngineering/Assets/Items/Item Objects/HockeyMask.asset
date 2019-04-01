@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d38968f138315024da5e470b29e84575, type: 3}
-  m_Name: Torch
+  m_Name: HockeyMask
   m_EditorClassIdentifier: 
-  ConsumeOnUse: 1
-  Image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  ItemName: Torch
+  ConsumeOnUse: 0
+  Image: {fileID: 21300000, guid: d15c1b3425d1b294c8076cbcc656e0cc, type: 3}
+  ItemName: Hockey Mask
   SellValue: 0
   DisplayInfo: 0
-  Description: Light
+  Description: Hard to see through

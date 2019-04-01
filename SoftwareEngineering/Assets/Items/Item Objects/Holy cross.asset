@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38968f138315024da5e470b29e84575, type: 3}
   m_Name: Holy cross
   m_EditorClassIdentifier: 
-  ConsumeOnUse: 1
-  Image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  ConsumeOnUse: 0
+  Image: {fileID: 21300000, guid: 9895e2b48c521904baf02e5f777bf6d2, type: 3}
   ItemName: Holy Cross
   SellValue: 0
   DisplayInfo: 0

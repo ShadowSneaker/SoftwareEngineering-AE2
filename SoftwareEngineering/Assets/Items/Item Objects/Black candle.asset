@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d38968f138315024da5e470b29e84575, type: 3}
-  m_Name: HockeyMask
+  m_Name: Black candle
   m_EditorClassIdentifier: 
-  ConsumeOnUse: 1
-  Image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  ItemName: Hockey Mask
+  ConsumeOnUse: 0
+  Image: {fileID: 21300000, guid: a10827b28c1787e4b820ee9118aa708d, type: 3}
+  ItemName: Black candle
   SellValue: 0
   DisplayInfo: 0
-  Description: Hard to see through
+  Description: Something so dark Gives light
