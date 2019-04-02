@@ -41,11 +41,19 @@ public class EntityScript : MonoBehaviour
     // The maximum amount of sanity this unit can have.
     public float MaxSanity = 100.0f;
 
+    public float Strength = 5.0f;
+
     // How fast this entity moves in the world.
     public float MovementSpeed = 10.0f;
 
     // How high this entity can jump.
     public float JumpStrength = 5.0f;
+
+    public Weapon EquipedWeapon;
+
+    public GameObject WeaponMesh;
+
+    public float DefaultRange = 1.2f;
 
 
     /// Protected Variables
@@ -287,6 +295,50 @@ public class EntityScript : MonoBehaviour
         }
     }
 
+
+    // Attacks anything infront of the entity.
+    public void Attack()
+    {
+        Anim.SetBool("Attacking", true);
+        RaycastHit Hit;
+
+        float Range = DefaultRange;
+        if (EquipedWeapon)
+        {
+            Range = EquipedWeapon.Range;
+        }
+
+        // Checks for entities infront of this entity.
+        if (Physics.Raycast(transform.position, transform.forward, out Hit, Range))
+        {
+            // Ensures that what is infront of the entity is another entity.
+            EntityScript Entity = Hit.collider.GetComponent<EntityScript>();
+            if (Entity)
+            {
+                // Damages the other entitiy found.
+                Entity.ApplyDamage(Strength + ((EquipedWeapon) ? EquipedWeapon.Damage : 0.0f));
+            }
+        }
+    }
+
+
+    // Puts a weapon into the player's active hand.
+    public void Equip(Weapon NewWeapon)
+    {
+        EquipedWeapon = NewWeapon;
+
+        if (NewWeapon.WeaponMesh) WeaponMesh = Instantiate<GameObject>(NewWeapon.WeaponMesh, transform);
+        // Bind mesh to hand joint.
+
+    }
+
+
+    // Removes the weapon from the player's active hand.
+    public void UnEquip()
+    {
+        EquipedWeapon = null;
+        Destroy(WeaponMesh);
+    }
 
 
     /// Movement
