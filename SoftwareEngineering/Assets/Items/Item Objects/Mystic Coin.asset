@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConsumeOnUse: 0
   Image: {fileID: 21300000, guid: 27f82d9a4f9d649408409fed60b3da87, type: 3}
-  ItemName: 
+  ItemName: Mystic coin
   SellValue: 0
   DisplayInfo: 0
-  Description: 
+  Description: Shiny

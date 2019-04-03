@@ -12,7 +12,9 @@ public class InventorySlot : MonoBehaviour
     private Text[] InfoText;
 
     public bool infoclicked;
-    
+
+   // private string name;
+   // private string itemdescription;
 
      public void AddItem(ItemScript newItem)
      {
@@ -22,8 +24,11 @@ public class InventorySlot : MonoBehaviour
 
         InfoText = ItemInfo.GetComponentsInChildren<Text>();
 
-         InfoText[0].text = "Name:" + item.ItemName;
-        InfoText[1].text = "Description: " + item.Description;
+        //name = item.name;
+        //itemdescription = item.Description;
+
+        InfoText[0].text = "Name:";
+        InfoText[1].text = "Description: ";
      }
 
      public void ClearSlot()
@@ -51,14 +56,17 @@ public class InventorySlot : MonoBehaviour
 
         if (infoclicked)
         {
-            ItemInfo.enabled = true;
+            ItemInfo.gameObject.SetActive(true);
+
+            InfoText[0].text = "Name: " + item.ItemName;
+            InfoText[1].text = "Description: " + item.Description;
 
             InfoText[0].enabled = true;
             InfoText[1].enabled = true;
         }
         else if(!infoclicked)
         {
-            ItemInfo.enabled = false;
+            ItemInfo.gameObject.SetActive(false);
 
             InfoText[0].enabled = false;
             InfoText[1].enabled = false;
