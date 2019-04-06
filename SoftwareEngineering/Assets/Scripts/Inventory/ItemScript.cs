@@ -25,6 +25,10 @@ public class ItemScript : ScriptableObject
     //description of the item
     public string Description;
 
+    // the statistic that the item can modify
+    public string statistic;
+
+    public int stat;
 
     public virtual void Use(EntityScript User)
     {

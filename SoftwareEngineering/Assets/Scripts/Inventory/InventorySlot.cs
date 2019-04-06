@@ -37,7 +37,7 @@ public class InventorySlot : MonoBehaviour
          Icon.sprite = null;
          Icon.enabled = false;
          
-     }
+    }
 
      public void OnRemoveButton()
      {
@@ -46,7 +46,42 @@ public class InventorySlot : MonoBehaviour
 
     public void UseItem()
     {
-        // dont know what to add here yet
+        switch(item.statistic)
+        {
+            case ("Strength"):
+                {
+                    PlayerStats.ModStrength = PlayerStats.ModStrength + item.stat;
+                    break;
+                }
+            case ("Agility"):
+                {
+                    PlayerStats.ModAgility = PlayerStats.ModAgility + item.stat;
+                    break;
+                }
+            case ("Intelligence"):
+                {
+                    PlayerStats.ModIntelligence = PlayerStats.ModIntelligence + item.stat;
+                    break;
+                }
+            case ("Willpower"):
+                {
+                    PlayerStats.ModWillpower = PlayerStats.ModWillpower + item.stat;
+                    break;
+                }
+            case ("Perception"):
+                {
+                    PlayerStats.ModPerception = PlayerStats.ModPerception + item.stat;
+                    break;
+                }
+            case ("Charisma"):
+                {
+                    PlayerStats.ModCharisma = PlayerStats.ModCharisma + item.stat;
+                    break;
+                }
+        }
+
+        //removes the item after
+        Inventory.Instance.RemoveItems(item);
     }
 
     public void OnInfoClicked()
@@ -72,5 +107,7 @@ public class InventorySlot : MonoBehaviour
             InfoText[1].enabled = false;
         }
     }
+
+
 
 }

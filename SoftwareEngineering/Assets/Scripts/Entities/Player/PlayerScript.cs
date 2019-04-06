@@ -89,7 +89,7 @@ public class PlayerScript : EntityScript
 
     protected override void OnDeath(bool IsInsanity)
     {
-        Debug.Log("Ran");
+        
         if (UI)
         {
             UI.DisplayGameOver();

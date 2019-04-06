@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
         {
             PauseMenu.gameObject.SetActive(!PauseMenu.IsActive());
             Cursor.visible = !Cursor.visible;
+            
         }
 
 

@@ -17,3 +17,5 @@ MonoBehaviour:
   SellValue: 0
   DisplayInfo: 0
   Description: Something so dark Gives light
+  statistic: Willpower
+  stat: 1

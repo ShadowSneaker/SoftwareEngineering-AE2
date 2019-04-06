@@ -17,3 +17,5 @@ MonoBehaviour:
   SellValue: 0
   DisplayInfo: 0
   Description: Worse then a gear
+  statistic: Strength
+  stat: 1

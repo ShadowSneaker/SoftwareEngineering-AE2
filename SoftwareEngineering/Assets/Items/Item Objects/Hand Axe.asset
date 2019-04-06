@@ -17,3 +17,5 @@ MonoBehaviour:
   SellValue: 0
   DisplayInfo: 0
   Description: Wheres the closest Mirror
+  statistic: Strength
+  stat: 1
