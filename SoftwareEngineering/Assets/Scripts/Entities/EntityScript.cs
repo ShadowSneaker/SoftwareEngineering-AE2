@@ -76,6 +76,8 @@ public class EntityScript : MonoBehaviour
     // Holds the information on the velocity going up/down.
     private float JumpVal;
 
+    private bool Attacking = false;
+
     
 
     /// Component Variables
@@ -297,28 +299,51 @@ public class EntityScript : MonoBehaviour
 
 
     // Attacks anything infront of the entity.
-    public void Attack()
+    public void Attack(EntityScript DefaultEntity = null)
     {
-        Anim.SetBool("Attacking", true);
-        RaycastHit Hit;
-
-        float Range = DefaultRange;
-        if (EquipedWeapon)
+        if (!Attacking)
         {
-            Range = EquipedWeapon.Range;
-        }
+           
+            Attacking = true;
+            Anim.SetBool("Attacking", true);
+            RaycastHit Hit;
 
-        // Checks for entities infront of this entity.
-        if (Physics.Raycast(transform.position, transform.forward, out Hit, Range))
-        {
-            // Ensures that what is infront of the entity is another entity.
-            EntityScript Entity = Hit.collider.GetComponent<EntityScript>();
-            if (Entity)
+            float Range = DefaultRange;
+            if (EquipedWeapon)
             {
-                // Damages the other entitiy found.
-                Entity.ApplyDamage(Strength + ((EquipedWeapon) ? EquipedWeapon.Damage : 0.0f));
+                Range = EquipedWeapon.Range;
+            }
+
+            StartCoroutine(StopAttacking());
+
+            // Should this have a garenteed hit on a specified object.
+            if (DefaultEntity)
+            {
+                DefaultEntity.ApplyDamage(Strength);
+            }
+            else
+            {
+                // Checks for entities infront of this entity.
+                if (Physics.Raycast(transform.position, transform.forward, out Hit, Range))
+                {
+                    // Ensures that what is infront of the entity is another entity.
+                    EntityScript Entity = Hit.collider.GetComponent<EntityScript>();
+                    if (Entity)
+                    {
+                        // Damages the other entitiy found.
+                        Entity.ApplyDamage(Strength + ((EquipedWeapon) ? EquipedWeapon.Damage : 0.0f));
+                    }
+                }
             }
         }
+    }
+
+
+    private IEnumerator StopAttacking()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Attacking = false;
+        Anim.SetBool("Attacking", false);
     }
 
 

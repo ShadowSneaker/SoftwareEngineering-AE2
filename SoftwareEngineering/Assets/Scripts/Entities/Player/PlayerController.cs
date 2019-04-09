@@ -30,13 +30,19 @@ public class PlayerController : MonoBehaviour
     {
         MoveDir = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         MoveDir = transform.TransformDirection(MoveDir);
+        Player.MoveDirection(MoveDir);
+
 
         if (Input.GetButton("Jump"))
         {
             Player.Jump();
         }
 
-        Player.MoveDirection(MoveDir);
+
+        if (Input.GetButtonDown("Attack"))
+        {
+            Player.Attack();
+        }
 
 
         // byrons code
@@ -53,6 +59,8 @@ public class PlayerController : MonoBehaviour
             Inventory.gameObject.SetActive(!Inventory.IsActive());
             Cursor.visible = !Cursor.visible;
         }
+
+
     }
 
 }
