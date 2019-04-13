@@ -1,0 +1,848 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: 4210d00e5d46bd5469465e36f9f0022f
+    name: Basement Room A
+  - guid: 3d2a75922bfa3054ebe32e4007712dba
+    name: Basement Room B
+  - guid: 38f3e9c6843393f408cec358df5fe433
+    name: Basement Room C
+  - guid: 6ef64b3ab9540b547804f2f63e313c38
+    name: Basement Room D
+  - guid: 5b70194b1ceb1e94a99195a58bae3f82
+    name: Basement Room E
+  - guid: 17869cdd10dac47409eaaf0e01dc75a8
+    name: Basement Room f
+  - guid: b1e21ec205bee934383bac53c4783bd9
+    name: Basement Room Landing
+  - guid: ef3654f2d17aec840b672a5ecef1c051
+    name: Ground Room A
+  - guid: 79430ead9dfa52146970f6719ec1d4ba
+    name: Ground Room B
+  - guid: c11d67cae347f3c44b169ade492f84dd
+    name: Ground Room C
+  - guid: 942e5775a0b4f9645b76a8b74a21ede7
+    name: Ground Room D
+  - guid: cee373680802de946b64f5daf40d0239
+    name: Ground Room E
+  - guid: 5600aadb9c3394b4c825abb9d4d28512
+    name: Ground Room F
+  - guid: b169368f84f2a7043acbc78429c19121
+    name: Grounf Room G
+  - guid: e49bc8ff9f75462479f2bebeb552016b
+    name: Ground Room Staircase
+  - guid: 0b3823229410e984a8d3993ab88b34ac
+    name: MasterVol
+  - guid: 248aa148b983e1e4986ad1854c019762
+    name: Upper Room A
+  - guid: d5aebcd1d9c6ff145b077121d006acbc
+    name: Upper Room B
+  - guid: 41944bdd1e4766840aee9e2bdaadc3b7
+    name: Upper Room D
+  - guid: ef241efc624ccfc48a919a14b2f10a9f
+    name: Upper Room E
+  - guid: 410fb70cc232ede4bbc3ad41a3783ac5
+    name: Upper Room F
+  - guid: 9967d035e13588344b61e3585f82317f
+    name: Upper Room G
+  - guid: 172cc694e8708a948adba5f9a96849e6
+    name: Upper Room J
+  - guid: 4b7eff4b883f62d418bde3174aabe227
+    name: Upper Rooom UpperFoyer
+  m_AudioMixerGroupViews:
+  - guids:
+    - 6fd6d1b2842838d409ec6610c57a46ad
+    - 0629b98d8e8c53e45ba6a7283906b8bd
+    - d0542063a9648e4458816410c73f9c0a
+    - c294224beabf9a440a12487e162945cb
+    - 074b8b564a1cd674b9a8744a7db24b51
+    - 7d9fc00f57a53f047ae4b4f16f36f49c
+    - 659f5aeddaf65aa42940c4297b3182a4
+    - 575bbf2957b2d4248845d893ae846cb4
+    - 4fbdc51973c76ab48b219691fdb82f96
+    - 8902c24e7f5c7d64989a0fc5e461fa52
+    - dbdb09315f01f524f9e911a3de549f42
+    - 7b7de858cb07de24a8f40bc0c502206b
+    - 994a81180565eb845a159c03c04f1a3d
+    - e0aecef9b99358f42b55ffcdb2f6f73b
+    - f0a255c0b0617b444923ea5160a2bde9
+    - 322122d89962d044d848a0e25e9aa752
+    - ebcda595170aa6145b92a147a9d79397
+    - f009f4ebb89b589429088c384b2d7822
+    - 12ed7d616c3e9a24fa238080ee1711a6
+    - 499f5bb89678b3145af79da4da2da337
+    - aac753182310e4247afc3e73273a815c
+    - 10e62fe44dd20574493e26f963bc7e79
+    - cc7f744cc7661e2499310fad4473267e
+    - bd7f0fecf2ed0554fb9b3f8f45528372
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 6fd6d1b2842838d409ec6610c57a46ad
+  m_Children:
+  - {fileID: 243216455026725512}
+  - {fileID: 243497936590347020}
+  - {fileID: 243544973568850804}
+  - {fileID: 243481236444947010}
+  - {fileID: 243243603610475462}
+  - {fileID: 243780109178862986}
+  - {fileID: 243348274632890696}
+  - {fileID: 243110663506105082}
+  - {fileID: 243844894258692956}
+  - {fileID: 243879386840611478}
+  - {fileID: 243512929957254832}
+  - {fileID: 243212332463777814}
+  - {fileID: 243027719785046460}
+  - {fileID: 243639783587879606}
+  - {fileID: 243264158090890592}
+  - {fileID: 243428902041111448}
+  - {fileID: 243539160630654508}
+  - {fileID: 243700425696742544}
+  - {fileID: 243071527636577050}
+  - {fileID: 243295922292616004}
+  - {fileID: 243029001328839852}
+  - {fileID: 243730310857776954}
+  - {fileID: 243504816738866140}
+  m_Volume: 0b3823229410e984a8d3993ab88b34ac
+  m_Pitch: b450a33f341b0744199c69a9d608357c
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 843626dfd7c86da4fa5a03f19aadfdfa
+  m_EffectName: Attenuation
+  m_MixLevel: 54ae9aa8c72b7244eabb32fd3cdc5fd0
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: bc24eb2a83d0f4949a629d4b477192ba
+  m_FloatValues:
+    ef3654f2d17aec840b672a5ecef1c051: -0.002441872
+  m_TransitionOverrides: {}
+--- !u!243 &243027719785046460
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room F
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: e0aecef9b99358f42b55ffcdb2f6f73b
+  m_Children: []
+  m_Volume: 410fb70cc232ede4bbc3ad41a3783ac5
+  m_Pitch: 56e124fae1faea8439742bc909b9632a
+  m_Effects:
+  - {fileID: 244617427978017020}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243029001328839852
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Basement Room E
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 10e62fe44dd20574493e26f963bc7e79
+  m_Children: []
+  m_Volume: 5b70194b1ceb1e94a99195a58bae3f82
+  m_Pitch: 6dd08a7790f241b479708a5ee178b1e0
+  m_Effects:
+  - {fileID: 244127242312593486}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243071527636577050
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Basement Room C
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 499f5bb89678b3145af79da4da2da337
+  m_Children: []
+  m_Volume: 38f3e9c6843393f408cec358df5fe433
+  m_Pitch: 465fba15c5debee4da9d408f3f28a926
+  m_Effects:
+  - {fileID: 244686825379533466}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243110663506105082
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room Staircase
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4fbdc51973c76ab48b219691fdb82f96
+  m_Children: []
+  m_Volume: e49bc8ff9f75462479f2bebeb552016b
+  m_Pitch: 4266f666da665c34abe23f0059cd8591
+  m_Effects:
+  - {fileID: 244966990947881004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243212332463777814
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room E
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 994a81180565eb845a159c03c04f1a3d
+  m_Children: []
+  m_Volume: ef241efc624ccfc48a919a14b2f10a9f
+  m_Pitch: ff4b35cf591cded4398d63e3cb2fedec
+  m_Effects:
+  - {fileID: 244756401817247492}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243216455026725512
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room A
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 0629b98d8e8c53e45ba6a7283906b8bd
+  m_Children: []
+  m_Volume: ef3654f2d17aec840b672a5ecef1c051
+  m_Pitch: c9acedfc8b5483f40a0e94bfa49f60ad
+  m_Effects:
+  - {fileID: 244976869905185840}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243243603610475462
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room E
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 7d9fc00f57a53f047ae4b4f16f36f49c
+  m_Children: []
+  m_Volume: cee373680802de946b64f5daf40d0239
+  m_Pitch: 7716a32c29e9b704eaa1ade85d4a17ad
+  m_Effects:
+  - {fileID: 244551647877995036}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243264158090890592
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room J
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 322122d89962d044d848a0e25e9aa752
+  m_Children: []
+  m_Volume: 172cc694e8708a948adba5f9a96849e6
+  m_Pitch: 322421e771a49de4ebfa729088270298
+  m_Effects:
+  - {fileID: 244829193965502066}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243295922292616004
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Basement Room D
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: aac753182310e4247afc3e73273a815c
+  m_Children: []
+  m_Volume: 6ef64b3ab9540b547804f2f63e313c38
+  m_Pitch: 799779c65410f984db9cae4cc1aec1b6
+  m_Effects:
+  - {fileID: 244255113235111394}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243348274632890696
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room G
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 575bbf2957b2d4248845d893ae846cb4
+  m_Children: []
+  m_Volume: b169368f84f2a7043acbc78429c19121
+  m_Pitch: 279c6ada9e4a8b243bdba23f62db1d7e
+  m_Effects:
+  - {fileID: 244778172052700156}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243428902041111448
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room UpperFoyer
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: ebcda595170aa6145b92a147a9d79397
+  m_Children: []
+  m_Volume: 4b7eff4b883f62d418bde3174aabe227
+  m_Pitch: ab084a33df5f4a14cb8a32bbe76378cf
+  m_Effects:
+  - {fileID: 244118228770382242}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243481236444947010
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room D
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 074b8b564a1cd674b9a8744a7db24b51
+  m_Children: []
+  m_Volume: 942e5775a0b4f9645b76a8b74a21ede7
+  m_Pitch: e7593555d8c91a74aacc1a3af8a2ad31
+  m_Effects:
+  - {fileID: 244553512558980810}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243497936590347020
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room B
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: d0542063a9648e4458816410c73f9c0a
+  m_Children: []
+  m_Volume: 79430ead9dfa52146970f6719ec1d4ba
+  m_Pitch: 121abb923337f214d8b3079478e45648
+  m_Effects:
+  - {fileID: 244615899317558448}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243504816738866140
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Basement Room Landing
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: bd7f0fecf2ed0554fb9b3f8f45528372
+  m_Children: []
+  m_Volume: b1e21ec205bee934383bac53c4783bd9
+  m_Pitch: 4f340469cccff9d4fb6ca54f299b699e
+  m_Effects:
+  - {fileID: 244936367665559292}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243512929957254832
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room D
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 7b7de858cb07de24a8f40bc0c502206b
+  m_Children: []
+  m_Volume: 41944bdd1e4766840aee9e2bdaadc3b7
+  m_Pitch: 33b206fc7b6b34c48a88ab5a25b9a5de
+  m_Effects:
+  - {fileID: 244316444990368678}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243539160630654508
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Basement Room A
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f009f4ebb89b589429088c384b2d7822
+  m_Children: []
+  m_Volume: 4210d00e5d46bd5469465e36f9f0022f
+  m_Pitch: 8e26baffdef9a4748b8dfc8bb04fba61
+  m_Effects:
+  - {fileID: 244377261030205484}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243544973568850804
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room C
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c294224beabf9a440a12487e162945cb
+  m_Children: []
+  m_Volume: c11d67cae347f3c44b169ade492f84dd
+  m_Pitch: 736b1a6de9ad3414ab3d4aa0af793140
+  m_Effects:
+  - {fileID: 244247211994601980}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243639783587879606
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room G
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f0a255c0b0617b444923ea5160a2bde9
+  m_Children: []
+  m_Volume: 9967d035e13588344b61e3585f82317f
+  m_Pitch: 6a00c0df56b7650468d9ef9e1b1f9cf0
+  m_Effects:
+  - {fileID: 244711109555219114}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243700425696742544
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Basement Room B
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 12ed7d616c3e9a24fa238080ee1711a6
+  m_Children: []
+  m_Volume: 3d2a75922bfa3054ebe32e4007712dba
+  m_Pitch: b4d72114bfb8cda468c119fc4dfd736a
+  m_Effects:
+  - {fileID: 244955115491282038}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243730310857776954
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Basement Room F
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: cc7f744cc7661e2499310fad4473267e
+  m_Children: []
+  m_Volume: 17869cdd10dac47409eaaf0e01dc75a8
+  m_Pitch: 9f22dee5996afac43ab063300e74e8af
+  m_Effects:
+  - {fileID: 244495037282146662}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243780109178862986
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground Room F
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 659f5aeddaf65aa42940c4297b3182a4
+  m_Children: []
+  m_Volume: 5600aadb9c3394b4c825abb9d4d28512
+  m_Pitch: d26616494521a3541ab6642af62cfbfa
+  m_Effects:
+  - {fileID: 244051840718776936}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243844894258692956
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room A
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 8902c24e7f5c7d64989a0fc5e461fa52
+  m_Children: []
+  m_Volume: 248aa148b983e1e4986ad1854c019762
+  m_Pitch: d64db7c86abca3c4e9c6b9fdb68f144e
+  m_Effects:
+  - {fileID: 244986210098116628}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243879386840611478
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Upper Room B
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: dbdb09315f01f524f9e911a3de549f42
+  m_Children: []
+  m_Volume: d5aebcd1d9c6ff145b077121d006acbc
+  m_Pitch: 3d447e2fd7a679c45875020c49f71ae0
+  m_Effects:
+  - {fileID: 244530394273239740}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244051840718776936
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8a7af12a7f0fbec419c792dd15949b34
+  m_EffectName: Attenuation
+  m_MixLevel: 007c1738ce918154d8e549dbec948a2f
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244118228770382242
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: a26f14aa15e61eb4aa33da0219467b77
+  m_EffectName: Attenuation
+  m_MixLevel: e0651f8280d77ed4f8cf8e83dcebe975
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244127242312593486
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: f7e08e4266b8a064d9f09ce818c64f90
+  m_EffectName: Attenuation
+  m_MixLevel: d550b6cfa8e8dee4b9d8d2e48bbbfd48
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244247211994601980
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: b861d6d10dcdb5c41933fb2698865065
+  m_EffectName: Attenuation
+  m_MixLevel: 93808eae20cd5274d8bd99ab5b30c4ce
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244255113235111394
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6122888203fb6104cbc71ef5dd48336d
+  m_EffectName: Attenuation
+  m_MixLevel: 02f894a4272530e47ba208d3b2e1c18e
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244316444990368678
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: d806a019d0ed32c4086aa66778afcaee
+  m_EffectName: Attenuation
+  m_MixLevel: 3af29e33805d4314ea1c10421f3aa8d8
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244377261030205484
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: ed83ade0200d46b4aa46fd0953ea3561
+  m_EffectName: Attenuation
+  m_MixLevel: 6d2448fd8d41e3f4990febd4d20ba6c0
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244495037282146662
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: fc3d22c710a7a5247b77252c5dc0fb51
+  m_EffectName: Attenuation
+  m_MixLevel: 2876a25f656ae0d4583ac3288f853481
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244530394273239740
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 3a19a35405f22f142a39b80fcf6d007a
+  m_EffectName: Attenuation
+  m_MixLevel: b92d1a72aa065a1468707cdd845607bc
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244551647877995036
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5037cabf7c566a94c84bf0e71a985e41
+  m_EffectName: Attenuation
+  m_MixLevel: d36cd41c2b992d64092c2443ef1a6cef
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244553512558980810
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: b9360c85fa961bb46bd85122b4fe8adb
+  m_EffectName: Attenuation
+  m_MixLevel: 2d9e31b92662d13408764e8c5940f62f
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244615899317558448
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 135726ade6a44074cb6c320c5563f285
+  m_EffectName: Attenuation
+  m_MixLevel: 3921583af8030a340a4a4a8aeeb939c8
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244617427978017020
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2ef808d940118304aaed9bf3338153c8
+  m_EffectName: Attenuation
+  m_MixLevel: a82ab6d0e5ba20a459b2f00508f1737f
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244686825379533466
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: c3003d5d08d4a2a44bdee8263164bae1
+  m_EffectName: Attenuation
+  m_MixLevel: 91e16dbb9edafd944ab248ec9f80f46d
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244711109555219114
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: f31fb9ebb29a8884c9d62a0f1f922757
+  m_EffectName: Attenuation
+  m_MixLevel: f18a45e26cafa8e45b52475b032c33ec
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244756401817247492
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2f5085cfd383cab43a84d25dd20635a5
+  m_EffectName: Attenuation
+  m_MixLevel: c64b7a384a31f3641adc954aa25facb4
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244778172052700156
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: eedd53b5e60fad64d901598fffe78464
+  m_EffectName: Attenuation
+  m_MixLevel: 4cfa15a4a0a5acb47a8d277bd8cda38a
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244829193965502066
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: c9bc24c2d7959824895f1eb134903c7b
+  m_EffectName: Attenuation
+  m_MixLevel: ae794ab12fec6db42bbfaf115fdb6f72
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244936367665559292
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 87597b59fb9a96a40a304afa76b976b4
+  m_EffectName: Attenuation
+  m_MixLevel: 9eba78b817f8aa343ba15c0e47155896
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244955115491282038
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6a920f0aaabe8db4cbf4808abe016dde
+  m_EffectName: Attenuation
+  m_MixLevel: b1103c153dcfe4a42971019ca26d2596
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244966990947881004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: f915298720d7d144e87df42558fc948a
+  m_EffectName: Attenuation
+  m_MixLevel: 65e33e0e1ac2c0d4bb92bd261520c249
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244976869905185840
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 780b6d7d45d2f1b4db4ec3b0f52e16c0
+  m_EffectName: Attenuation
+  m_MixLevel: cbc2469b12bb5f042adb7f31dcbd185c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244986210098116628
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 195dab30bd86ae643b1cb69e5c99927e
+  m_EffectName: Attenuation
+  m_MixLevel: 9a662535969207f469808ae2ae14704e
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

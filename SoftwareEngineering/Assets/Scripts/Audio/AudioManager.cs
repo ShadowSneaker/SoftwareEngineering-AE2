@@ -6,45 +6,67 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-
+    [SerializeField]
     public Sound[] sounds;
 
     public static AudioManager instance;
 
-    private void Awake()
+    //private void Awake()
+    //{
+    //    if (instance == null)
+    //        instance = this;
+    //
+    //    foreach(Sound s in sounds)
+    //    {
+    //        s.source = gameObject.AddComponent<AudioSource>();
+    //        s.source.clip = s.clip;
+    //        s.source.volume = s.volume;
+    //        s.source.pitch = s.pitch;
+    //        s.source.loop = s.Loop;
+    //    }
+    //
+    //}
+    //
+    //public void Play()
+    //{
+    //    Sound s = Array.Find(sounds, sound => sound.name == name);
+    //    if (s == null)
+    //    {
+    //        Debug.LogWarning("Sound: " + name + " not found!");
+    //        return;
+    //    }
+    //    else
+    //    {
+    //      s.source.Play();
+    //    }
+    //
+    //   
+    //}
+
+    void Start()
     {
-        if (instance == null)
-            instance = this;
-
-        foreach(Sound s in sounds)
+        for(int i = 0; i  < sounds.Length; i ++)
         {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
-            s.source.loop = s.Loop;
-        }
+            GameObject _soundobject = new GameObject("Sound " + i + " " + sounds[i].name);
 
+            sounds[i].SetSource(_soundobject.AddComponent<AudioSource>());
+        }
     }
 
-    public void Play()
+    public void PlaySound(string SoundName)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
+        for (int i = 0; i < sounds.Length; i++)
         {
-            Debug.LogWarning("Sound: " + name + " not found!");
-            return;
-        }
-        else
-        {
-          s.source.Play();
+            if(sounds[i].name == SoundName)
+            {
+                sounds[i].Play();
+                return;
+            }
         }
 
-       
+        // has not found any sound with the name
+        Debug.Log("Sound not found");
     }
 
-
-
-    
 
 }
