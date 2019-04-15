@@ -221,12 +221,12 @@ GameObject:
   - component: {fileID: 95778132872602130}
   - component: {fileID: 54001245379491256}
   - component: {fileID: 136710225862985338}
-  - component: {fileID: 114067043422586998}
-  - component: {fileID: 114016770140154586}
-  - component: {fileID: 114432919806753730}
   - component: {fileID: 195292405810086484}
   - component: {fileID: 114602446771372154}
   - component: {fileID: 114009321478904688}
+  - component: {fileID: 114272684682729534}
+  - component: {fileID: 114369786234015752}
+  - component: {fileID: 114423656975628620}
   m_Layer: 0
   m_Name: Pizza Guy
   m_TagString: Untagged
@@ -1521,8 +1521,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1191718696829100}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 268.90927, y: 83.5, z: -813.55096}
+  m_LocalRotation: {x: -0, y: 0.98692787, z: -0, w: -0.16116288}
+  m_LocalPosition: {x: -13.95, y: 0.099999994, z: 54.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4759364248288074}
@@ -1537,7 +1537,7 @@ Transform:
   - {fileID: 4868779125254374}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 198.549, z: 0}
 --- !u!4 &4322529073693046
 Transform:
   m_ObjectHideFlags: 1
@@ -2253,9 +2253,13 @@ MonoBehaviour:
   ImmunityFrameTime: 0.8
   MaxHealth: 100
   MaxSanity: 100
+  Strength: 5
   MovementSpeed: 10
   JumpStrength: 5
---- !u!114 &114016770140154586
+  EquipedWeapon: {fileID: 0}
+  WeaponMesh: {fileID: 0}
+  DefaultRange: 1.2
+--- !u!114 &114272684682729534
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2263,14 +2267,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1191718696829100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fac4d75df096674b9483dc2457de406, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c47474ea00c7dd4e803d610a49ec60d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharecterText: {fileID: 0}
-  NPCDialogue: {fileID: 0}
-  beginingDialog: 0
-  EndDialog: 0
---- !u!114 &114067043422586998
+  OptionOnedialogue:
+    Charectername: pizaa guy
+    sentences:
+    - This pizza is gonna get cold
+  OptionTwodialogue:
+    Charectername: Pizza guy
+    sentences:
+    - have you found the owner
+    - never mind
+  Eventdialogue:
+    Charectername: Pizza guy
+    sentences:
+    - hi im hear to deliver pizza do you know where the home owner is
+    - you know what that doesnt matter what are you doing in here
+    - actually never mind by
+--- !u!114 &114369786234015752
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2286,8 +2301,8 @@ MonoBehaviour:
   Events:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Dialog
+      - m_Target: {fileID: 114272684682729534}
+        m_MethodName: TriggerDialog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2299,7 +2314,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114432919806753730
+--- !u!114 &114423656975628620
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2307,16 +2322,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1191718696829100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ab1a1d68d3fc84fa9d3207499eb0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ff8d251203176a46bb773f8a9478920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Charectername: Test
-  sentences:
-  - ONE
-  - TWO
-  - THREE
-  FinalLine: Bye
-  StartLine: Hi
+  Interactable: 1
+  BoundObjects:
+  - {fileID: 114369786234015752}
+  DeactivateOnInteraction: 0
+  FlavourText: Press F to interact
+  ObjectInfo: 
 --- !u!114 &114602446771372154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2336,23 +2350,16 @@ MonoBehaviour:
   Node6: {fileID: 0}
   Node7: {fileID: 0}
   TheHub: {fileID: 0}
-  Itemnodes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Itemnodes: []
   Travelpoint: {fileID: 0}
-  MoveOn: 0
+  MoveOn: 1
   AtHub: 0
   Once: 0
   Interacting: 0
   WaitTimer: 5
   interactPlayer: 0
   interactObject: 0
-  EventTriggered: 0
+  AIOn: 1
 --- !u!136 &136710225862985338
 CapsuleCollider:
   m_ObjectHideFlags: 1

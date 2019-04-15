@@ -9,7 +9,28 @@ public class BackGroundSound : MonoBehaviour
 
     public void Start()
     {
-        //Mixer.SetFloat("Room A", -80);
+        Mixer.SetFloat("Gound Room A", -80);
+        Mixer.SetFloat("Gound Room B", -80);
+        Mixer.SetFloat("Gound Room C", -80);
+        Mixer.SetFloat("Gound Room D", -80);
+        Mixer.SetFloat("Gound Room E", -80);
+        Mixer.SetFloat("Gound Room F", -80);
+        Mixer.SetFloat("Gound Room G", -80);
+        Mixer.SetFloat("Gound Room Staircase", -80);
+        Mixer.SetFloat("Upper Room A", -80);
+        Mixer.SetFloat("Upper Room B", -80);
+        Mixer.SetFloat("Upper Room D", -80);
+        Mixer.SetFloat("Upper Room E", -80);
+        Mixer.SetFloat("Upper Room F", -80);
+        Mixer.SetFloat("Upper Room G", -80);
+        Mixer.SetFloat("Upper Room J", -80); 
+        Mixer.SetFloat("Upper Room UpperFoyer", -80);
+        Mixer.SetFloat("Basement Room A", -80);
+        Mixer.SetFloat("Basement Room B", -80);
+        Mixer.SetFloat("Basement Room C", -80);
+        Mixer.SetFloat("Basement Room D", -80);
+        Mixer.SetFloat("Basement Room E", -80);
+        Mixer.SetFloat("Basement Room Landing", -80);
     }
 
 

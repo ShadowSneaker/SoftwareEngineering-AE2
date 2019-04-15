@@ -119,8 +119,15 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialog(Dialogue OptionOneDialogue, Dialogue OptionTwoDialog, Dialogue OptionEventDialog)
     {
-        Cursor.visible = !Cursor.visible;
+        Cursor.visible = true;
+        CharecterText.text = "";
         Debug.Log("starting conversation");
+
+        // sets the choices true so the player can pick one
+        ChoiceOne.gameObject.SetActive(true);
+        ChoiceTwo.gameObject.SetActive(true);
+        ChoiceEvent.gameObject.SetActive(true);
+
 
         //to check to make sure they are all empty 
         SentencesOne.Clear();

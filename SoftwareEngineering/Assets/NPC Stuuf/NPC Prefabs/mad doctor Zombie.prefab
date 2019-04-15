@@ -674,12 +674,12 @@ GameObject:
   - component: {fileID: 95421784070316580}
   - component: {fileID: 54705681202953502}
   - component: {fileID: 136314457011175806}
-  - component: {fileID: 114159324808646204}
-  - component: {fileID: 114585714774236298}
-  - component: {fileID: 114315168652445712}
   - component: {fileID: 195882572148826940}
   - component: {fileID: 114922071514932104}
   - component: {fileID: 114662348939550630}
+  - component: {fileID: 114102161590584454}
+  - component: {fileID: 114622123614502082}
+  - component: {fileID: 114864682590986048}
   m_Layer: 0
   m_Name: mad doctor Zombie
   m_TagString: Untagged
@@ -1661,9 +1661,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1406209476478140}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 270.39606, y: 83.5, z: -776.5772}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.5669343, z: -0, w: 0.8237631}
+  m_LocalPosition: {x: 80.67099, y: 0.099999994, z: 30.914701}
+  m_LocalScale: {x: 0.8410244, y: 0.74567485, z: 1}
   m_Children:
   - {fileID: 4861119369499694}
   - {fileID: 4838483070889964}
@@ -1678,7 +1678,7 @@ Transform:
   - {fileID: 4072224193628084}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -69.073006, z: 0}
 --- !u!4 &4416317301779338
 Transform:
   m_ObjectHideFlags: 1
@@ -2267,7 +2267,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114159324808646204
+--- !u!114 &114102161590584454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406209476478140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff8d251203176a46bb773f8a9478920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interactable: 1
+  BoundObjects:
+  - {fileID: 114622123614502082}
+  DeactivateOnInteraction: 0
+  FlavourText: Press F to interact
+  ObjectInfo: 
+--- !u!114 &114622123614502082
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2283,8 +2300,8 @@ MonoBehaviour:
   Events:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Dialog
+      - m_Target: {fileID: 114864682590986048}
+        m_MethodName: TriggerDialog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2296,39 +2313,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114315168652445712
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1406209476478140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ab1a1d68d3fc84fa9d3207499eb0ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Charectername: Test
-  sentences:
-  - ONE
-  - TWO
-  - THREE
-  FinalLine: Bye
-  StartLine: Hi
---- !u!114 &114585714774236298
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1406209476478140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fac4d75df096674b9483dc2457de406, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharecterText: {fileID: 0}
-  NPCDialogue: {fileID: 0}
-  beginingDialog: 0
-  EndDialog: 0
 --- !u!114 &114662348939550630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2345,8 +2329,38 @@ MonoBehaviour:
   ImmunityFrameTime: 0.8
   MaxHealth: 100
   MaxSanity: 100
+  Strength: 5
   MovementSpeed: 10
   JumpStrength: 5
+  EquipedWeapon: {fileID: 0}
+  WeaponMesh: {fileID: 0}
+  DefaultRange: 1.2
+--- !u!114 &114864682590986048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406209476478140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c47474ea00c7dd4e803d610a49ec60d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OptionOnedialogue:
+    Charectername: Doctor
+    sentences:
+    - trust no one
+  OptionTwodialogue:
+    Charectername: Doctor
+    sentences:
+    - 'A medalion '
+    - there should be one around this house somewhere
+  Eventdialogue:
+    Charectername: Doctor
+    sentences:
+    - Is he gone
+    - Good this hole place is a mad house
+    - i need to find a way out and quick we are in danger
 --- !u!114 &114922071514932104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2780,7 +2794,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 66d8eae741520514ab23274751c97604, type: 2}
+  - {fileID: 2100000, guid: 0069e08a7af02114aba771e88e9bd169, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
