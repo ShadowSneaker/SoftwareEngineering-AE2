@@ -167,6 +167,13 @@ public class EntityScript : MonoBehaviour
     }
 
 
+    public void SetPosition(Transform NewTransform)
+    {
+        transform.position = NewTransform.position;
+        transform.rotation = NewTransform.rotation;
+    }
+
+
     public void LowerSanity(float Amount)
     {
         if (!IsDead && Amount > 0.0f)

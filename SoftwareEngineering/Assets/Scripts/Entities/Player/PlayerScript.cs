@@ -109,11 +109,7 @@ public class PlayerScript : EntityScript
     }
 
 
-    public void SetPosition(Transform NewTransform)
-    {
-        transform.position = NewTransform.position;
-        transform.rotation = NewTransform.rotation;
-    }
+    
 
 
     public void Respawn()
