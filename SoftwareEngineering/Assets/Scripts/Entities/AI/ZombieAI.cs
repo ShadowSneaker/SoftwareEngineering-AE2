@@ -26,6 +26,7 @@ public class ZombieAI : MonoBehaviour
     {
         TheNavMesh = FindObjectOfType<NavMeshAgent>();
         ZombiesNode = Node.Node1;
+        GetComponent<Animator>().SetBool("Walking", true);
 	}
 
     void Update()
