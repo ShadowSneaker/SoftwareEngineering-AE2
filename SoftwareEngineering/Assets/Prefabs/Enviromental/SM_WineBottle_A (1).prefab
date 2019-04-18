@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54277987116175310}
   - component: {fileID: 114599274771772040}
   - component: {fileID: 114698830918799908}
+  - component: {fileID: 114790385765518906}
   - component: {fileID: 114091218523981792}
   m_Layer: 0
   m_Name: SM_WineBottle_A (1)
@@ -155,7 +156,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interactable: 1
-  BoundObjects: []
+  BoundObjects:
+  - {fileID: 114091218523981792}
   DeactivateOnInteraction: 0
   FlavourText: Press F to interact
   ObjectInfo: 
+--- !u!114 &114790385765518906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368525699559158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb09df33bb25b5479453c945013ae09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdingPosition: {x: 0, y: 0, z: 1}
+  ThrowForce: 10

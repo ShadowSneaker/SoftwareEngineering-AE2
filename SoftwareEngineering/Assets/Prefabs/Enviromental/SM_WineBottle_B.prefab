@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 65280164084194068}
   - component: {fileID: 114631351806204406}
   - component: {fileID: 114299427206181226}
+  - component: {fileID: 114925226052388852}
   - component: {fileID: 114078322169699350}
   m_Layer: 0
   m_Name: SM_WineBottle_B
@@ -39,8 +40,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1930854200166498}
-  m_LocalRotation: {x: -0.7041315, y: 0.064798795, z: 0.06479879, w: 0.7041315}
-  m_LocalPosition: {x: 11.936584, y: -3.652118, z: 6.222}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.2961197, y: 0.45411825, z: -10.873375}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children: []
   m_Father: {fileID: 0}
@@ -155,7 +156,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interactable: 1
-  BoundObjects: []
+  BoundObjects:
+  - {fileID: 114299427206181226}
   DeactivateOnInteraction: 0
   FlavourText: Press F to interact
   ObjectInfo: 
+--- !u!114 &114925226052388852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1930854200166498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb09df33bb25b5479453c945013ae09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdingPosition: {x: 0, y: 0, z: 1}
+  ThrowForce: 10
